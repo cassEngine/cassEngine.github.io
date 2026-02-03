@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Cassandra Philogene – Portfolio",
-    "tagline": "Génie électrique · Robotique · Électronique · CAD · Programmation",
+    "tagline": "Génie électrique · Robotique · Électronique · Conception PCB · CAO · Programmation",
     "cta_primary": {
       "label": "Télécharger mon CV (PDF)",
       "href": "assets/resume/Cassandra_Philogene_CV(fr).pdf"
@@ -13,56 +13,33 @@
   },
   "about": {
     "heading": "À propos",
-    "text": "Étudiante en génie électrique à l’Université Concordia, je m’intéresse particulièrement à la robotique, à la conception électronique, au CAD et à la programmation. J’aime passer du schéma au prototype, tester, améliorer et documenter mes apprentissages à travers des projets concrets.",
+    "text": "Étudiante en génie électrique à l’Université Concordia, je construis des systèmes concrets à la jonction du matériel et du logiciel : architecture électrique, intégration de capteurs, commande et prototypage. Ce que j’aime le plus : transformer une idée en un prototype fiable — puis l’améliorer jusqu’à ce qu’il soit clair, mesurable et bien documenté.",
     "highlights": [
       "Recherche de stage – Été 2026",
-      "Approche pratique : conception → intégration → tests",
-      "Esprit d’équipe et curiosité technique"
+      "Du schéma au prototype : conception → intégration → tests",
+      "Rigueur, curiosité et esprit d’équipe"
     ]
   },
   "skills": [
     {
       "category": "Programmation",
-      "items": [
-        "C",
-        "C++",
-        "Python",
-        "VHDL"
-      ]
+      "items": ["C", "C++", "Python", "VHDL"]
     },
     {
-      "category": "Systèmes embarqués",
-      "items": [
-        "Arduino",
-        "ROS2",
-        "Contrôle moteur",
-        "Capteurs"
-      ]
+      "category": "Systèmes embarqués & robotique",
+      "items": ["Arduino", "ROS2", "Commande moteur", "Interfaçage capteurs"]
     },
     {
       "category": "Matériel & conception",
-      "items": [
-        "Conception PCB",
-        "LTspice",
-        "Fusion 360"
-      ]
+      "items": ["Conception de PCB", "LTspice", "Distribution d’alimentation", "CAO (Fusion 360)"]
     },
     {
       "category": "FPGA & simulation",
-      "items": [
-        "Vivado",
-        "ModelSim"
-      ]
+      "items": ["Vivado", "ModelSim"]
     },
     {
       "category": "Outils",
-      "items": [
-        "GitHub",
-        "Linux",
-        "Visual Studio",
-        "PyCharm",
-        "Excel"
-      ]
+      "items": ["GitHub", "Linux", "Visual Studio", "PyCharm", "Excel"]
     }
   ],
   "projects": [
@@ -70,46 +47,37 @@
       "title": "SAE Aero Design – Systèmes électriques",
       "subtitle": "Université Concordia · 2025 – présent",
       "image": "sae_plane.jpg",
-      "description": "Participation à l’architecture et à l’intégration des systèmes électriques d’un aéronef télécommandé destiné à la compétition SAE Aero Design.",
+      "description": "Conception et intégration des systèmes électriques d’un aéronef télécommandé : de l’architecture d’alimentation au câblage, avec une approche orientée fiabilité et performance.",
       "bullets": [
-        "Conception de l’architecture électrique (alimentation, distribution, câblage)",
-        "Assemblage, intégration et validation de sous-systèmes",
-        "Participation aux essais et analyse de performance"
+        "Définition de l’architecture électrique : rails, distribution, connectique et faisceaux",
+        "Intégration et validation de sous-systèmes (diagnostic, correction, itérations)",
+        "Contribution aux essais et analyse des résultats pour améliorer la robustesse"
       ],
-      "gallery": [
-        "sae_circuit_architecture.jpg",
-        "sae_circuit.jpg"
-      ]
+      "gallery": ["sae_circuit_architecture.jpg", "sae_circuit.jpg"]
     },
     {
       "title": "Compétition Robowars – Robot autonome",
       "subtitle": "Compétition · Avril 2025",
       "image": "robowars_main.jpg",
-      "description": "Conception d’un robot autonome basé sur Arduino, capable de prendre des décisions en temps réel à partir de capteurs.",
+      "description": "Robot autonome Arduino conçu pour réagir en temps réel : perception capteurs, logique de décision et actionnement, optimisé pour la stabilité en match.",
       "bullets": [
-        "Programmation Arduino et stratégie de contrôle",
-        "Intégration capteurs + contrôle moteur",
-        "Optimisation de la robustesse, vitesse et stabilité"
+        "Programmation d’une logique modulaire (capteurs → décision → action)",
+        "Intégration capteurs + pilotage moteur, réglages pour une réponse stable",
+        "Amélioration de la fiabilité mécanique/électrique (câblage, fixation, endurance)"
       ],
-      "gallery": [
-        "sumo_robot.jpg",
-        "sumo_robot_cad.jpg"
-      ]
+      "gallery": ["sumo_robot.jpg", "sumo_robot_cad.jpg"]
     },
     {
-      "title": "Aéroglisseur autonome – Prototype & CAD",
+      "title": "Aéroglisseur autonome – Prototype & CAO",
       "subtitle": "Projet · Décembre 2025",
       "image": "hovercraft.jpg",
-      "description": "Projet de conception d’un aéroglisseur autonome : modélisation CAD, intégration des composants et itérations de design.",
+      "description": "Prototype d’aéroglisseur autonome : modélisation CAO, intégration des composants, et itérations de design guidées par des contraintes réelles (poids, stabilité, accès maintenance).",
       "bullets": [
-        "Modélisation CAD avec Fusion 360",
-        "Intégration électronique et tests",
-        "Design orienté contraintes (poids, espace, stabilité)"
+        "Conception CAO sous Fusion 360 et optimisation du layout",
+        "Intégration électronique + essais terrain pour ajuster le comportement",
+        "Design orienté contraintes : stabilité, centre de gravité et accessibilité batterie"
       ],
-      "gallery": [
-        "hovercraft_cad.jpg",
-        "hovercraft_cad_design2.jpg"
-      ]
+      "gallery": ["hovercraft_cad.jpg", "hovercraft_cad_design2.jpg"]
     }
   ],
   "contact": {
