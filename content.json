@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Cassandra Philogene – Portfolio",
-    "tagline": "Génie électrique · Robotique · Électronique · Conception PCB · CAO · Programmation",
+    "tagline": "Génie électrique · Systèmes embarqués · Robotique · Électronique · Conception PCB · CAO · Programmation",
     "cta_primary": {
       "label": "Télécharger mon CV (PDF)",
       "href": "assets/resume/Cassandra_Philogene_CV(fr).pdf"
@@ -13,11 +13,11 @@
   },
   "about": {
     "heading": "À propos",
-    "text": "Étudiante en génie électrique à l’Université Concordia, je construis des systèmes concrets à la jonction du matériel et du logiciel : architecture électrique, intégration de capteurs, commande et prototypage. Ce que j’aime le plus : transformer une idée en un prototype fiable — puis l’améliorer jusqu’à ce qu’il soit clair, mesurable et bien documenté.",
+    "text": "Étudiante en génie électrique à l’Université Concordia, je développe des projets à l’interface du matériel et du logiciel : architecture électrique, interfaçage capteurs, commande et intégration. J’aime concevoir, prototyper, tester et itérer — avec une documentation claire et une attention particulière à la fiabilité.",
     "highlights": [
       "Recherche de stage – Été 2026",
-      "Du schéma au prototype : conception → intégration → tests",
-      "Rigueur, curiosité et esprit d’équipe"
+      "Approche pratique : conception → intégration → tests",
+      "Curiosité technique et travail d’équipe"
     ]
   },
   "skills": [
@@ -44,40 +44,73 @@
   ],
   "projects": [
     {
+      "title": "Bras robotisé d’échecs (ROS2) — En cours",
+      "subtitle": "Projet IEEE · Déc. 2025 – présent (cible : été 2026)",
+      "image": "placeholder_neon.jpg",
+      "description": "Développement d’un bras robotisé piloté via ROS2, avec une structure logicielle modulaire pour exécuter des mouvements de façon sécuritaire et répétable.",
+      "bullets": [
+        "Architecture ROS2 en Python : nœuds pour commandes, états, exécution",
+        "Planification d’exécution : trajectoires, limites articulaires, contraintes de sécurité",
+        "Documentation d’installation et procédure de démonstration reproductible"
+      ],
+      "gallery": []
+    },
+    {
+      "title": "PCB Buck Converter (BEC) — En cours",
+      "subtitle": "Projet SAE · Déc. 2025 – présent (cible : été 2026)",
+      "image": "placeholder_neon.jpg",
+      "description": "Conception d’un convertisseur abaisseur sur PCB pour fournir une alimentation stable, avec validation simulation et routage orienté CEM.",
+      "bullets": [
+        "Choix d’architecture et composants : contrôleur, inductance, protections (UVLO/OCP/thermique)",
+        "Validation LTspice : stabilité, transitoires, ajustements pour ondulation et objectifs thermiques",
+        "Démarrage layout PCB : boucles di/dt minimisées, stratégie de masse, découplage"
+      ],
+      "gallery": []
+    },
+    {
       "title": "SAE Aero Design – Systèmes électriques",
       "subtitle": "Université Concordia · 2025 – présent",
       "image": "sae_plane.jpg",
-      "description": "Conception et intégration des systèmes électriques d’un aéronef télécommandé : de l’architecture d’alimentation au câblage, avec une approche orientée fiabilité et performance.",
+      "description": "Conception et intégration des systèmes électriques d’un aéronef RC, avec une approche orientée robustesse, câblage propre et validation terrain.",
       "bullets": [
-        "Définition de l’architecture électrique : rails, distribution, connectique et faisceaux",
-        "Intégration et validation de sous-systèmes (diagnostic, correction, itérations)",
-        "Contribution aux essais et analyse des résultats pour améliorer la robustesse"
+        "Architecture électrique : rails, distribution, connectique et faisceaux",
+        "Intégration et validation : diagnostic, correctifs, itérations",
+        "Analyse des essais pour améliorer la fiabilité"
       ],
-      "gallery": ["sae_circuit_architecture.jpg", "sae_circuit.jpg"]
+      "gallery": [
+        "sae_circuit_architecture.jpg",
+        "sae_circuit.jpg"
+      ]
     },
     {
       "title": "Compétition Robowars – Robot autonome",
       "subtitle": "Compétition · Avril 2025",
       "image": "robowars_main.jpg",
-      "description": "Robot autonome Arduino conçu pour réagir en temps réel : perception capteurs, logique de décision et actionnement, optimisé pour la stabilité en match.",
+      "description": "Robot autonome Arduino : capteurs, logique temps réel et actionnement, optimisé pour la stabilité et la robustesse en match.",
       "bullets": [
-        "Programmation d’une logique modulaire (capteurs → décision → action)",
-        "Intégration capteurs + pilotage moteur, réglages pour une réponse stable",
-        "Amélioration de la fiabilité mécanique/électrique (câblage, fixation, endurance)"
+        "Contrôle modulaire (capteurs → décision → action)",
+        "Intégration capteurs + pilotage moteur, réglages de stabilité",
+        "Amélioration de la robustesse mécanique/électrique"
       ],
-      "gallery": ["sumo_robot.jpg", "sumo_robot_cad.jpg"]
+      "gallery": [
+        "sumo_robot.jpg",
+        "sumo_robot_cad.jpg"
+      ]
     },
     {
       "title": "Aéroglisseur autonome – Prototype & CAO",
       "subtitle": "Projet · Décembre 2025",
       "image": "hovercraft.jpg",
-      "description": "Prototype d’aéroglisseur autonome : modélisation CAO, intégration des composants, et itérations de design guidées par des contraintes réelles (poids, stabilité, accès maintenance).",
+      "description": "Conception CAO et prototypage d’un aéroglisseur autonome, avec itérations guidées par les contraintes : poids, stabilité et maintenance.",
       "bullets": [
-        "Conception CAO sous Fusion 360 et optimisation du layout",
-        "Intégration électronique + essais terrain pour ajuster le comportement",
-        "Design orienté contraintes : stabilité, centre de gravité et accessibilité batterie"
+        "Modélisation CAO sous Fusion 360",
+        "Intégration électronique et essais de validation",
+        "Optimisation du layout : centre de gravité, accès batterie"
       ],
-      "gallery": ["hovercraft_cad.jpg", "hovercraft_cad_design2.jpg"]
+      "gallery": [
+        "hovercraft_cad.jpg",
+        "hovercraft_cad_design2.jpg"
+      ]
     }
   ],
   "contact": {
@@ -88,3 +121,4 @@
     "note": "Ouverte aux opportunités de stage – Été 2026."
   }
 }
+
