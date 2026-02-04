@@ -122,17 +122,6 @@ nav{
   font-weight:950;
 }
 
-.bolt{
-  display:inline-block;
-  transform: translateY(1px);
-  color: #ffffff;
-  text-shadow: var(--glowBlue), var(--glowViolet);
-}
-.bolt.big{
-  margin-right:10px;
-  font-size:26px;
-  text-shadow: var(--glowBlue), var(--glowViolet), var(--glowPink);
-}
 
 /* H1 */
 h1{
