@@ -21,11 +21,11 @@
     <section class="hero">
       <div>
         <div class="kicker" id="top">
-          <span class="badge">Stage – Été 2026</span>
+          <span class="badge"><span class="bolt">⚡</span> Stage – Été 2026</span>
           Portfolio · Génie électrique
         </div>
 
-        <h1>Génie électrique</h1>
+        <h1><span class="bolt big">⚡</span> Génie électrique</h1>
 
         <p class="subtitle">
           Systèmes embarqués · robotique · électronique · conception PCB · CAO · programmation
@@ -40,8 +40,8 @@
 
         <div class="pills">
           <div class="pill neon">Recherche de stage – Été 2026</div>
+          <div class="pill violet">Neon blue + violet · identité tech</div>
           <div class="pill">Conception → intégration → tests</div>
-          <div class="pill">Documentation claire & itérations</div>
         </div>
       </div>
 
@@ -50,20 +50,22 @@
         <div class="heroCardLine"><span class="dot"></span> Systèmes embarqués & intégration</div>
         <div class="heroCardLine"><span class="dot"></span> Architecture électrique & câblage</div>
         <div class="heroCardLine"><span class="dot"></span> Prototypage, tests, amélioration</div>
-        <div class="heroCardHint">Disponible pour stage · Montréal (QC)</div>
+        <div class="heroCardHint">Disponible pour stage · Laval / Montréal (QC)</div>
       </div>
 
+      <!-- FX layers -->
       <div class="bgfx" aria-hidden="true"></div>
       <div class="electricFx" aria-hidden="true"></div>
+      <div class="electricLines" aria-hidden="true"></div>
     </section>
 
     <section class="section" id="apropos">
       <h2>À propos</h2>
       <div class="card padded">
         <p class="subtitle" style="margin:0;max-width:none">
-          Étudiante en génie électrique à l’Université Concordia, je développe des projets à l’interface du matériel et du logiciel :
-          architecture électrique, interfaçage capteurs, commande et intégration. J’aime concevoir, prototyper, tester et itérer —
-          avec une attention particulière à la fiabilité et à la clarté de la documentation.
+          Étudiante en génie électrique à l’Université Concordia, je conçois des systèmes à l’interface hardware/software :
+          architecture d’alimentation, interfaçage de capteurs, commande et intégration. J’aime passer du design à la validation,
+          puis itérer jusqu’à obtenir un résultat propre, fiable et bien documenté.
         </p>
       </div>
     </section>
@@ -104,48 +106,45 @@
       <h2>Projets</h2>
       <div class="projects">
 
-        <!-- NEW: Chess Robot Arm -->
         <div class="card padded project">
           <div><img src="assets/images/placeholder_neon.jpg" alt="Bras robotisé d’échecs (ROS2) — En cours"></div>
           <div>
             <h3>Bras robotisé d’échecs (ROS2) — En cours</h3>
             <div class="meta">Projet IEEE · Déc. 2025 – présent (cible : été 2026)</div>
             <div class="subtitle" style="margin:0">
-              Développement d’un bras robotisé piloté via ROS2, avec une structure logicielle modulaire pour des mouvements sécuritaires et reproductibles.
+              Bras robotisé contrôlé sous ROS2, conçu pour exécuter des mouvements sécuritaires et reproductibles grâce à une architecture logicielle modulaire.
             </div>
             <ul>
-              <li>Architecture ROS2 en Python : nœuds pour commandes, états, exécution</li>
+              <li>Architecture ROS2 en Python : nœuds commandes, états, exécution</li>
               <li>Trajectoires + contraintes : limites articulaires, sécurité, gestion de base des fautes</li>
               <li>Documentation d’installation et procédure de démonstration</li>
             </ul>
           </div>
         </div>
 
-        <!-- NEW: Buck Converter PCB -->
         <div class="card padded project">
           <div><img src="assets/images/placeholder_neon.jpg" alt="PCB Buck Converter (BEC) — En cours"></div>
           <div>
             <h3>PCB Buck Converter (BEC) — En cours</h3>
             <div class="meta">Projet SAE · Déc. 2025 – présent (cible : été 2026)</div>
             <div class="subtitle" style="margin:0">
-              Conception d’un convertisseur abaisseur sur PCB pour fournir une alimentation stable, avec validation simulation et routage orienté CEM.
+              Convertisseur abaisseur sur PCB pour obtenir une alimentation stable, validé en simulation et routé en appliquant des bonnes pratiques CEM.
             </div>
             <ul>
               <li>Choix d’architecture : contrôleur, inductance, protections (UVLO/OCP/thermique)</li>
-              <li>Validation LTspice : stabilité, transitoires, ajustements vers les objectifs</li>
-              <li>Layout PCB : stratégie de masse, découplage, boucles di/dt minimisées</li>
+              <li>Validation LTspice : stabilité, transitoires, ajustements</li>
+              <li>Layout PCB : masse, découplage, boucles di/dt minimisées</li>
             </ul>
           </div>
         </div>
 
-        <!-- SAE -->
         <div class="card padded project">
           <div><img src="assets/images/sae_plane.jpg" alt="SAE Aero Design – Systèmes électriques"></div>
           <div>
             <h3>SAE Aero Design – Systèmes électriques</h3>
             <div class="meta">Université Concordia · 2025 – présent</div>
             <div class="subtitle" style="margin:0">
-              Conception et intégration des systèmes électriques d’un aéronef RC, avec une approche orientée robustesse, câblage propre et validation terrain.
+              Architecture et intégration électrique d’un aéronef RC, orientées robustesse, câblage propre et validation terrain.
             </div>
             <ul>
               <li>Architecture électrique : rails, distribution, connectique et faisceaux</li>
@@ -159,7 +158,6 @@
           </div>
         </div>
 
-        <!-- Robowars -->
         <div class="card padded project">
           <div><img src="assets/images/robowars_main.jpg" alt="Compétition Robowars – Robot autonome"></div>
           <div>
@@ -180,19 +178,18 @@
           </div>
         </div>
 
-        <!-- Hovercraft -->
         <div class="card padded project">
           <div><img src="assets/images/hovercraft.jpg" alt="Aéroglisseur autonome – Prototype & CAO"></div>
           <div>
             <h3>Aéroglisseur autonome – Prototype &amp; CAO</h3>
             <div class="meta">Projet · Décembre 2025</div>
             <div class="subtitle" style="margin:0">
-              Conception CAO et prototypage d’un aéroglisseur autonome, avec itérations guidées par les contraintes : poids, stabilité et maintenance.
+              Conception CAO et prototypage d’un aéroglisseur autonome, avec itérations guidées par le poids, la stabilité et la maintenance.
             </div>
             <ul>
               <li>Modélisation CAO sous Fusion 360</li>
               <li>Intégration électronique et essais de validation</li>
-              <li>Optimisation du layout : centre de gravité, accès batterie</li>
+              <li>Optimisation : centre de gravité, accès batterie</li>
             </ul>
             <div class="gallery">
               <img src="assets/images/hovercraft_cad.jpg" alt="Aéroglisseur – image">
@@ -211,7 +208,7 @@
           Email : <a href="mailto:cassandra.cpn221@gmail.com">cassandra.cpn221@gmail.com</a><br/>
           LinkedIn : <a href="https://www.linkedin.com/in/cassandra-philog%C3%A8ne-506678314/" target="_blank" rel="noopener">linkedin.com/in/cassandra-philogène</a><br/>
           GitHub : <a href="https://github.com/cassEngine/" target="_blank" rel="noopener">github.com/cassEngine</a><br/>
-          <span style="display:inline-block;margin-top:8px">Ouverte aux opportunités de stage – Été 2026.</span>
+          <span style="display:inline-block;margin-top:8px">Ouverte aux opportunités de stage – Été 2026 (Laval / Montréal).</span>
         </div>
       </div>
     </section>
@@ -220,4 +217,3 @@
   </div>
 </body>
 </html>
-
