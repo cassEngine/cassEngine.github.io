@@ -13,45 +13,30 @@
   },
   "about": {
     "heading": "À propos",
-    "text": "Étudiante en génie électrique à l’Université Concordia, je développe des projets à l’interface du matériel et du logiciel : architecture électrique, interfaçage capteurs, commande et intégration. J’aime concevoir, prototyper, tester et itérer — avec une documentation claire et une attention particulière à la fiabilité.",
+    "text": "Étudiante en génie électrique à l’Université Concordia, je conçois des systèmes à l’interface hardware/software : alimentation, interfaçage de capteurs, commande et intégration. J’aime passer du design à la validation, puis itérer jusqu’à obtenir un résultat propre, fiable et bien documenté.",
     "highlights": [
       "Recherche de stage – Été 2026",
-      "Approche pratique : conception → intégration → tests",
-      "Curiosité technique et travail d’équipe"
+      "Conception → intégration → tests (approche terrain)",
+      "Rigueur, curiosité et collaboration"
     ]
   },
   "skills": [
-    {
-      "category": "Programmation",
-      "items": ["C", "C++", "Python", "VHDL"]
-    },
-    {
-      "category": "Systèmes embarqués & robotique",
-      "items": ["Arduino", "ROS2", "Commande moteur", "Interfaçage capteurs"]
-    },
-    {
-      "category": "Matériel & conception",
-      "items": ["Conception de PCB", "LTspice", "Distribution d’alimentation", "CAO (Fusion 360)"]
-    },
-    {
-      "category": "FPGA & simulation",
-      "items": ["Vivado", "ModelSim"]
-    },
-    {
-      "category": "Outils",
-      "items": ["GitHub", "Linux", "Visual Studio", "PyCharm", "Excel"]
-    }
+    { "category": "Programmation", "items": ["C", "C++", "Python", "VHDL"] },
+    { "category": "Systèmes embarqués & robotique", "items": ["Arduino", "ROS2", "Commande moteur", "Interfaçage capteurs"] },
+    { "category": "Matériel & conception", "items": ["Conception de PCB", "LTspice", "Distribution d’alimentation", "CAO (Fusion 360)"] },
+    { "category": "FPGA & simulation", "items": ["Vivado", "ModelSim"] },
+    { "category": "Outils", "items": ["GitHub", "Linux", "Visual Studio", "PyCharm", "Excel"] }
   ],
   "projects": [
     {
       "title": "Bras robotisé d’échecs (ROS2) — En cours",
       "subtitle": "Projet IEEE · Déc. 2025 – présent (cible : été 2026)",
       "image": "placeholder_neon.jpg",
-      "description": "Développement d’un bras robotisé piloté via ROS2, avec une structure logicielle modulaire pour exécuter des mouvements de façon sécuritaire et répétable.",
+      "description": "Développement d’un bras robotisé piloté via ROS2, avec une structure logicielle modulaire pour exécuter des mouvements sécuritaires et reproductibles.",
       "bullets": [
-        "Architecture ROS2 en Python : nœuds pour commandes, états, exécution",
-        "Planification d’exécution : trajectoires, limites articulaires, contraintes de sécurité",
-        "Documentation d’installation et procédure de démonstration reproductible"
+        "Architecture ROS2 en Python : nœuds commandes, états, exécution",
+        "Trajectoires + contraintes : limites articulaires, sécurité, gestion de base des fautes",
+        "Documentation d’installation et procédure de démonstration"
       ],
       "gallery": []
     },
@@ -59,11 +44,11 @@
       "title": "PCB Buck Converter (BEC) — En cours",
       "subtitle": "Projet SAE · Déc. 2025 – présent (cible : été 2026)",
       "image": "placeholder_neon.jpg",
-      "description": "Conception d’un convertisseur abaisseur sur PCB pour fournir une alimentation stable, avec validation simulation et routage orienté CEM.",
+      "description": "Conception d’un convertisseur abaisseur sur PCB pour fournir une alimentation stable, validé en simulation et routé avec une approche CEM.",
       "bullets": [
-        "Choix d’architecture et composants : contrôleur, inductance, protections (UVLO/OCP/thermique)",
-        "Validation LTspice : stabilité, transitoires, ajustements pour ondulation et objectifs thermiques",
-        "Démarrage layout PCB : boucles di/dt minimisées, stratégie de masse, découplage"
+        "Choix d’architecture : contrôleur, inductance, protections (UVLO/OCP/thermique)",
+        "Validation LTspice : stabilité, transitoires, ajustements vers les objectifs",
+        "Layout PCB : stratégie de masse, découplage, boucles di/dt minimisées"
       ],
       "gallery": []
     },
@@ -71,16 +56,13 @@
       "title": "SAE Aero Design – Systèmes électriques",
       "subtitle": "Université Concordia · 2025 – présent",
       "image": "sae_plane.jpg",
-      "description": "Conception et intégration des systèmes électriques d’un aéronef RC, avec une approche orientée robustesse, câblage propre et validation terrain.",
+      "description": "Architecture et intégration des systèmes électriques d’un aéronef RC, orientées robustesse, câblage propre et validation terrain.",
       "bullets": [
         "Architecture électrique : rails, distribution, connectique et faisceaux",
         "Intégration et validation : diagnostic, correctifs, itérations",
         "Analyse des essais pour améliorer la fiabilité"
       ],
-      "gallery": [
-        "sae_circuit_architecture.jpg",
-        "sae_circuit.jpg"
-      ]
+      "gallery": ["sae_circuit_architecture.jpg", "sae_circuit.jpg"]
     },
     {
       "title": "Compétition Robowars – Robot autonome",
@@ -92,25 +74,19 @@
         "Intégration capteurs + pilotage moteur, réglages de stabilité",
         "Amélioration de la robustesse mécanique/électrique"
       ],
-      "gallery": [
-        "sumo_robot.jpg",
-        "sumo_robot_cad.jpg"
-      ]
+      "gallery": ["sumo_robot.jpg", "sumo_robot_cad.jpg"]
     },
     {
       "title": "Aéroglisseur autonome – Prototype & CAO",
       "subtitle": "Projet · Décembre 2025",
       "image": "hovercraft.jpg",
-      "description": "Conception CAO et prototypage d’un aéroglisseur autonome, avec itérations guidées par les contraintes : poids, stabilité et maintenance.",
+      "description": "Conception CAO et prototypage d’un aéroglisseur autonome, avec itérations guidées par le poids, la stabilité et la maintenance.",
       "bullets": [
         "Modélisation CAO sous Fusion 360",
         "Intégration électronique et essais de validation",
-        "Optimisation du layout : centre de gravité, accès batterie"
+        "Optimisation : centre de gravité, accès batterie"
       ],
-      "gallery": [
-        "hovercraft_cad.jpg",
-        "hovercraft_cad_design2.jpg"
-      ]
+      "gallery": ["hovercraft_cad.jpg", "hovercraft_cad_design2.jpg"]
     }
   ],
   "contact": {
@@ -118,7 +94,8 @@
     "email": "cassandra.cpn221@gmail.com",
     "linkedin": "https://www.linkedin.com/in/cassandra-philog%C3%A8ne-506678314/",
     "github": "https://github.com/cassEngine/",
-    "note": "Ouverte aux opportunités de stage – Été 2026."
+    "note": "Ouverte aux opportunités de stage – Été 2026. Basée à Laval / Montréal."
   }
 }
+
 
