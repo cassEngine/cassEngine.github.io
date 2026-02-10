@@ -1,10 +1,10 @@
 {
   "site": {
-    "title": "Cassandra Philogene – Portfolio",
-    "tagline": "Génie électrique · Systèmes embarqués · Robotique · Électronique · Conception PCB · CAO · Programmation",
+    "title": "Cassandra Philogène – Portfolio",
+    "tagline": "Génie électrique · Robotique · Électronique · CAO · Programmation",
     "cta_primary": {
       "label": "Télécharger mon CV (PDF)",
-      "href": "assets/resume/Cassandra_Philogene_CV(fr).pdf"
+      "href": "assets/resume/Philogene_Cassandra_CV(fr).pdf"
     },
     "cta_secondary": {
       "label": "Me contacter",
@@ -13,80 +13,114 @@
   },
   "about": {
     "heading": "À propos",
-    "text": "Étudiante en génie électrique à l’Université Concordia, je conçois des systèmes à l’interface hardware/software : alimentation, interfaçage de capteurs, commande et intégration. J’aime passer du design à la validation, puis itérer jusqu’à obtenir un résultat propre, fiable et bien documenté.",
+    "text": "Étudiante en génie électrique à l’Université Concordia, orientée vers les systèmes embarqués, la robotique et l’électronique de puissance. Je conçois et valide des prototypes via schémas et simulations, intégration et câblage, puis tests itératifs. Je documente les décisions de conception afin que les systèmes soient reproductibles et faciles à dépanner.",
     "highlights": [
-      "Recherche de stage – Été 2026",
-      "Conception → intégration → tests (approche terrain)",
-      "Rigueur, curiosité et collaboration"
+      "Recherche de stage — été 2026",
+      "Terrain : conception → intégration → validation",
+      "Mentalité équipe : construire, déboguer, documenter"
     ]
   },
   "skills": [
-    { "category": "Programmation", "items": ["C", "C++", "Python", "VHDL"] },
-    { "category": "Systèmes embarqués & robotique", "items": ["Arduino", "ROS2", "Commande moteur", "Interfaçage capteurs"] },
-    { "category": "Matériel & conception", "items": ["Conception de PCB", "LTspice", "Distribution d’alimentation", "CAO (Fusion 360)"] },
-    { "category": "FPGA & simulation", "items": ["Vivado", "ModelSim"] },
-    { "category": "Outils", "items": ["GitHub", "Linux", "Visual Studio", "PyCharm", "Excel"] }
+    {
+      "category": "Programmation",
+      "items": ["C", "C++", "Python", "VHDL"]
+    },
+    {
+      "category": "Systèmes embarqués",
+      "items": [
+        "Arduino",
+        "ROS2",
+        "Interfaçage de capteurs",
+        "Commande en boucle fermée (PID)",
+        "Drivers moteurs"
+      ]
+    },
+    {
+      "category": "Matériel & conception",
+      "items": ["Conception PCB", "LTspice", "Fusion 360"]
+    },
+    {
+      "category": "FPGA & simulation",
+      "items": ["Vivado", "ModelSim"]
+    },
+    {
+      "category": "Outils",
+      "items": ["GitHub", "Linux", "MATLAB", "Visual Studio"]
+    }
   ],
   "projects": [
     {
-      "title": "Bras robotisé d’échecs (ROS2) — En cours",
-      "subtitle": "Projet IEEE · Déc. 2025 – présent (cible : été 2026)",
-      "image": "placeholder_neon.jpg",
-      "description": "Développement d’un bras robotisé piloté via ROS2, avec une structure logicielle modulaire pour exécuter des mouvements sécuritaires et reproductibles.",
-      "bullets": [
-        "Architecture ROS2 en Python : nœuds commandes, états, exécution",
-        "Trajectoires + contraintes : limites articulaires, sécurité, gestion de base des fautes",
-        "Documentation d’installation et procédure de démonstration"
-      ],
-      "gallery": []
-    },
-    {
-      "title": "PCB Buck Converter (BEC) — En cours",
-      "subtitle": "Projet SAE · Déc. 2025 – présent (cible : été 2026)",
-      "image": "placeholder_neon.jpg",
-      "description": "Conception d’un convertisseur abaisseur sur PCB pour fournir une alimentation stable, validé en simulation et routé avec une approche CEM.",
-      "bullets": [
-        "Choix d’architecture : contrôleur, inductance, protections (UVLO/OCP/thermique)",
-        "Validation LTspice : stabilité, transitoires, ajustements vers les objectifs",
-        "Layout PCB : stratégie de masse, découplage, boucles di/dt minimisées"
-      ],
-      "gallery": []
-    },
-    {
       "title": "SAE Aero Design – Systèmes électriques",
-      "subtitle": "Université Concordia · 2025 – présent",
+      "subtitle": "Université Concordia · 2025 – Présent",
       "image": "sae_plane.jpg",
-      "description": "Architecture et intégration des systèmes électriques d’un aéronef RC, orientées robustesse, câblage propre et validation terrain.",
+      "description": "Travail sur les systèmes électriques d’un avion RC de compétition : distribution d’alimentation, faisceaux/câblage, intégration et dépannage pendant l’assemblage et les essais en vol.",
       "bullets": [
-        "Architecture électrique : rails, distribution, connectique et faisceaux",
-        "Intégration et validation : diagnostic, correctifs, itérations",
-        "Analyse des essais pour améliorer la fiabilité"
+        "Architecture électrique : distribution d’alimentation et approche de câblage/faisceaux",
+        "Assemblage et intégration : connectique, routage, tests de continuité, mise en service des sous-systèmes",
+        "Support débogage : isolement de pannes (courts-circuits, connexions intermittentes) durant le prototypage",
+        "Support essais en vol : analyse des observations/télémétrie et propositions d’ajustements d’intégration"
       ],
       "gallery": ["sae_circuit_architecture.jpg", "sae_circuit.jpg"]
     },
     {
       "title": "Compétition Robowars – Robot autonome",
-      "subtitle": "Compétition · Avril 2025",
+      "subtitle": "Compétition · avril 2025",
       "image": "robowars_main.jpg",
-      "description": "Robot autonome Arduino : capteurs, logique temps réel et actionnement, optimisé pour la stabilité et la robustesse en match.",
+      "description": "Robot autonome basé sur Arduino, conçu pour réagir en temps réel grâce au retour capteurs et à l’actionnement des moteurs.",
       "bullets": [
-        "Contrôle modulaire (capteurs → décision → action)",
-        "Intégration capteurs + pilotage moteur, réglages de stabilité",
-        "Amélioration de la robustesse mécanique/électrique"
+        "Logique de contrôle : lecture capteurs → décision → boucle d’actionnement sur Arduino Nano",
+        "Intégration capteurs + driver moteur ; réglages pour une réponse stable en temps réel",
+        "Amélioration de la robustesse : montage, soulagement de traction du câblage, itérations"
       ],
       "gallery": ["sumo_robot.jpg", "sumo_robot_cad.jpg"]
     },
     {
       "title": "Aéroglisseur autonome – Prototype & CAO",
-      "subtitle": "Projet · Décembre 2025",
+      "subtitle": "Projet · décembre 2025",
       "image": "hovercraft.jpg",
-      "description": "Conception CAO et prototypage d’un aéroglisseur autonome, avec itérations guidées par le poids, la stabilité et la maintenance.",
+      "description": "Prototype d’aéroglisseur autonome axé sur l’intégration CAO→fabrication, la mise en route électronique et des essais itératifs pour navigation en labyrinthe.",
       "bullets": [
-        "Modélisation CAO sous Fusion 360",
-        "Intégration électronique et essais de validation",
-        "Optimisation : centre de gravité, accès batterie"
+        "CAO Fusion 360 pour un design manufacturable et un packaging stable",
+        "Intégration et mise en route : câblage, vérification capteurs, tests incrémentaux",
+        "Itération du comportement de navigation selon les résultats d’essais (réglages et débogage)"
       ],
       "gallery": ["hovercraft_cad.jpg", "hovercraft_cad_design2.jpg"]
+    },
+    {
+      "title": "PCB clignoteur double LED (NE555, vitesse variable)",
+      "subtitle": "Fabrication PCB · février 2026",
+      "image": "PCB_main.jpg",
+      "description": "Conception et fabrication d’un PCB d’oscillateur astable NE555 pour faire clignoter deux LED avec vitesse réglable. La fréquence est définie par un réseau RC, et un potentiomètre permet un ajustement en temps réel. Validation au scope et documentation du schéma et des choix de conception.",
+      "bullets": [
+        "Implémentation du NE555 en mode astable pour générer un signal carré continu (clignotement/alternance)",
+        "Réseau RC pour définir la fréquence + potentiomètre pour ajustement du rythme à la volée",
+        "Validation des formes d’onde et du timing à l’oscilloscope ; documentation du schéma, hypothèses et résultats"
+      ],
+      "gallery": ["PCB_schematic.jpg", "PCB_building.jpg"]
+    },
+    {
+      "title": "PCB convertisseur abaisseur (BEC) (prévu / en cours)",
+      "subtitle": "Projet SAE · Cible : mars 2026",
+      "image": "placeholder_project.jpg",
+      "description": "Projet d’électronique de puissance visant à concevoir un PCB de convertisseur buck pour obtenir un rail d’alimentation stable pour l’électronique RC/aéronef.",
+      "bullets": [
+        "Objectif : architecture et sélection des composants (contrôleur, inductance, protections)",
+        "Objectif : schéma + BOM ; validation LTspice (stabilité, réponse transitoire)",
+        "Objectif : fondamentaux de routage PCB (masse, découplage, boucles à fort di/dt)"
+      ],
+      "gallery": []
+    },
+    {
+      "title": "Bras robotisé d’échecs sous ROS2 (prévu / en cours)",
+      "subtitle": "Projet IEEE · Cible : été 2026",
+      "image": "placeholder_project.jpg",
+      "description": "Projet robotique visant à développer une pile de contrôle ROS2 pour un bras robotisé, afin d’exécuter des coups d’échecs de manière fiable et sécuritaire.",
+      "bullets": [
+        "Objectif : nœuds ROS2 en Python pour gestion des commandes et retours d’état",
+        "Objectif : pipeline d’exécution de mouvement (cinématique + génération de trajectoires)",
+        "Objectif : contraintes de sécurité (limites articulaires, zone de travail) + documentation"
+      ],
+      "gallery": []
     }
   ],
   "contact": {
@@ -94,7 +128,7 @@
     "email": "cassandra.cpn221@gmail.com",
     "linkedin": "https://www.linkedin.com/in/cassandra-philog%C3%A8ne-506678314/",
     "github": "https://github.com/cassEngine/",
-    "note": "Ouverte aux opportunités de stage – Été 2026. Basée à Laval / Montréal."
+    "note": "Ouverte aux opportunités de stage — été et hiver 2026."
   }
 }
 
