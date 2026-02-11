@@ -87,18 +87,6 @@
       "gallery": ["hovercraft_cad.jpg", "hovercraft_cad_design2.jpg"]
     },
     {
-      "title": "PCB clignoteur double LED (NE555, vitesse variable)",
-      "subtitle": "Fabrication PCB · février 2026",
-      "image": "PCB_main.jpg",
-      "description": "Conception et fabrication d’un PCB d’oscillateur astable NE555 pour faire clignoter deux LED avec vitesse réglable. La fréquence est définie par un réseau RC, et un potentiomètre permet un ajustement en temps réel. Validation au scope et documentation du schéma et des choix de conception.",
-      "bullets": [
-        "Implémentation du NE555 en mode astable pour générer un signal carré continu (clignotement/alternance)",
-        "Réseau RC pour définir la fréquence + potentiomètre pour ajustement du rythme à la volée",
-        "Validation des formes d’onde et du timing à l’oscilloscope ; documentation du schéma, hypothèses et résultats"
-      ],
-      "gallery": ["PCB_schematic.jpg", "PCB_building.jpg"]
-    },
-    {
       "title": "PCB convertisseur abaisseur (BEC) (prévu / en cours)",
       "subtitle": "Projet SAE · Cible : mars 2026",
       "image": "placeholder_project.jpg",
